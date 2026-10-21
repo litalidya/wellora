@@ -1,0 +1,381 @@
+/* reset all */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #F8FCF9;
+    color: #1F2933;
+    line-height: 1.6; /*jarak antar baris*/
+}
+
+/* header dan navbar */
+header{
+    width: 90%;
+    max-width: 1100px;
+    background-color: white;
+    border-radius: 40px;
+    box-shadow: 0 4px 20px rgba(18, 55, 42, 0.06);
+    margin: 10px auto 30px auto;
+    padding: 16px 32px;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-logo{
+    font-size: 22px;
+    font-weight: 800;
+    color: #12372A;
+    text-decoration: none;
+}
+
+.nav-menu{
+    display: flex;
+    align-items: center;
+    gap: 28px;
+}
+
+.nav-item{
+    color: #1F2933;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.nav-item:hover, .nav-item.active{
+    color: #2EAD70;
+    transition: color 0.2s ease;
+}
+
+.btn-unduh{
+    background-color:#2EAD70 ;
+    padding: 10px 22px;
+    border-radius: 25px;
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 14px;
+
+    display: flex;
+    align-items: center;
+
+    box-shadow: 0 4px 12px rgba(46, 173, 112, 0.25);
+}
+
+.btn-unduh:hover{
+    background-color: #248c5a;
+    transform: translateY(-2px);
+    transition: transform 0.2s ease;
+}
+
+/* hero section */
+.hero{
+    width: 90%;
+    max-width: 1100px;
+    margin:  0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+
+    padding-top: 30px;
+    padding-bottom: 60px;
+
+}
+
+.gambar-hero{
+    /* flex: 1;
+    display: flex;
+    justify-content: center; */
+
+}
+
+.gambar{
+    width: 100%;
+    max-width: 380px;
+    height: auto;
+}
+
+.badge-hero{
+    background-color: #E7F7EE;
+    color: #2EAD70;
+    padding: 8px 16px;
+    border: 1px solid #CBEFDB;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.judul-hero{
+    font-size: 48px;
+    color: #12372A;
+    font-weight: 800;
+    line-height: 1.15;
+    margin-bottom: 20px;
+}
+
+.deskripsi-hero{
+    font-size: 16px;
+    color: #52606D;
+    line-height: 1.65;
+    margin-bottom: 30px;
+}
+
+
+.text-hero{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+}
+
+  /* GRUP TOMBOL HERO */
+        .hero-buttons {
+            /* FLEX CONTAINER: Tombol berjajar horizontal */
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 14px;
+            /* FLEX-WRAP: Berpindah baris jika ruang sempit */
+            flex-wrap: wrap;
+            margin-bottom: 25px;
+        }
+
+        .btn-primary {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            background-color: #2EAD70;
+            color: #ffffff;
+            padding: 12px 24px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 14px;
+            box-shadow: 0 4px 14px rgba(46, 173, 112, 0.3);
+            transition: transform 0.2s ease, background-color 0.2s ease;
+        }
+
+        .btn-primary:hover {
+            background-color: #248c5a;
+            transform: translateY(-2px);
+        }
+
+        .btn-secondary {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            background-color: transparent;
+            border: 2px solid #2EAD70;
+            color: #2EAD70;
+            padding: 10px 22px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 14px;
+            transition: background-color 0.2s ease, color 0.2s ease;
+        }
+
+        .btn-secondary:hover {
+            background-color: #E7F7EE;
+        }
+
+        .hero-social {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 13px;
+            color: #52606D;
+            font-weight: 600;
+        }
+
+        /* fitur */
+        .wellness {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            gap: 50px;
+
+            width: 90%;
+            max-width: 1100px;
+            margin: 40px auto 80px auto;
+        }
+           .features {
+            /* FLEX CONTAINER: 4 card otomatis rata horizontal dengan tinggi yang sama */
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: stretch;
+            gap: 20px;
+
+            width: 90%;
+            max-width: 1100px;
+            margin: 30px auto 70px auto;
+        }
+
+        .feature-card {
+            /* FLEX: 1 -> Setiap kartu membagi lebar yang sama rata (1:1:1:1) */
+            flex: 1;
+            /* FLEX DIRECTION COLUMN: Mengatur isi tiap kartu dari atas ke bawah */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+
+            background-color: #ffffff;
+            padding: 28px 20px;
+            border-radius: 20px;
+            border: 1px solid #E5E9E8;
+            box-shadow: 0 8px 24px rgba(18, 55, 42, 0.04);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 12px 28px rgba(18, 55, 42, 0.08);
+        }
+
+        .feature-icon {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 54px;
+            height: 54px;
+            background-color: #E7F7EE;
+            border-radius: 16px;
+            font-size: 24px;
+            color: #2EAD70;
+            margin-bottom: 16px;
+        }
+
+        .feature-title {
+            font-size: 17px;
+            color: #12372A;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+
+        .feature-desc {
+            font-size: 13px;
+            color: #52606D;
+            line-height: 1.5;
+        }
+
+        /* wellness */
+           .wellness-content {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        .wellness-badge {
+            display: inline-flex;
+            align-items: center;
+            background-color: #E7F7EE;
+            color: #2EAD70;
+            padding: 6px 14px;
+            border-radius: 15px;
+            font-size: 12px;
+            font-weight: 700;
+            margin-bottom: 15px;
+        }
+
+        .section-title,
+        .wellness-title {
+            font-size: 36px;
+            color: #12372A;
+            font-weight: 800;
+            line-height: 1.25;
+            margin-bottom: 16px;
+        }
+
+        .section-desc,
+        .wellness-desc {
+            font-size: 15px;
+            color: #52606D;
+            line-height: 1.6;
+            margin-bottom: 25px;
+        }
+
+        .wellness-list {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            margin-bottom: 28px;
+        }
+
+        .wellness-list-item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 14px;
+            color: #12372A;
+            font-weight: 600;
+        }
+
+        .wellness-check {
+            color: #2EAD70;
+            font-weight: bold;
+        }
+
+        /* BAGIAN STATISTIK KARTU (KANAN) */
+        .wellness-stats {
+            flex: 1;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            gap: 18px;
+            justify-content: space-between;
+        }
+
+        .stat-card {
+            flex: 1 1 calc(50% - 18px);
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+
+            background-color: #ffffff;
+            padding: 22px;
+            border-radius: 20px;
+            border: 1px solid #E5E9E8;
+            box-shadow: 0 6px 20px rgba(18, 55, 42, 0.05);
+        }
+
+        .stat-icon {
+            font-size: 22px;
+            color: #2EAD70;
+            margin-bottom: 8px;
+        }
+
+        .stat-title {
+            font-size: 13px;
+            color: #7B8895;
+            font-weight: 600;
+            margin-bottom: 4px;
+        }
+
+        .stat-value {
+            font-size: 24px;
+            color: #12372A;
+            font-weight: 800;
+            margin-bottom: 6px;
+        }
+
+        .stat-subtext {
+            font-size: 12px;
+            color: #2EAD70;
+            font-weight: 700;
+        }
+
+
+
+
+
+
