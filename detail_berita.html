@@ -743,19 +743,7 @@
     <!-- ======================================================================
          JAVASCRIPT SEDERHANA: MEMILIH ARTIKEL SESUAI PARAMETER ?id=
          ====================================================================== -->
-    <script>
-        // 1. Ambil nomor id dari URL (contoh: detail-berita.html?id=1)
-        const urlParams = new URLSearchParams(window.location.search);
-        const id = urlParams.get('id') || '0';
-
-        // 2. Tampilkan hanya artikel yang dipilih
-        const artikelTerpilih = document.getElementById('artikel-' + id);
-        if (artikelTerpilih) {
-            artikelTerpilih.style.display = 'block';
-        } else {
-            document.getElementById('artikel-0').style.display = 'block';
-        }
-    </script>
+    <script src="script.js"></script>
 </body>
 
 </html>
